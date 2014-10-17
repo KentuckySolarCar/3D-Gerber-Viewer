@@ -55,7 +55,7 @@ wG.colors[wG.SILK]   = '#ffffff';
 // Guesses a layer's type from its filename.
 wG.guessLayer = function guessLayer(f) {
     f = f.toLowerCase();
-    if(f.match(/\.drl|\.drd|\.txt/))
+    if(f.match(/\.drl|\.drd|\.txt|\.xln/))
         return [wG.BOTTOM|wG.TOP, wG.BOARD];
     if(f.match(/\.out|\.gml|outline/))
         return [wG.BOTTOM|wG.TOP, wG.OUTLINE];
